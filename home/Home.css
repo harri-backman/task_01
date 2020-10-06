@@ -1,0 +1,49 @@
+
+.homeContainer {
+    display:grid;
+    grid-template-columns: repeat(10,1fr);
+    grid-template-rows: repeat(4,110px);
+}
+
+.homeTitle {
+    grid-column: 1/1;
+    grid-row: 1/1;
+}
+
+.homeLink01 {
+    grid-column: 1/1;
+    grid-row: 2/2;
+}
+
+.homeImage01 {
+    grid-column: 1/1;
+    grid-row: 3/3;
+}
+
+body {
+    background-color: aquamarine;
+    float: left;
+}
+
+@media only screen and (min-width: 768px) {
+ 
+    .homeTitle {
+        grid-column: 1/1;
+        grid-row: 1/1;
+    }
+    
+    .homeLink01 {
+        grid-column: 1/1;
+        grid-row: 4/4;
+    }
+    
+    .homeImage01 {
+        grid-column: 5/5;
+        grid-row: 1/1;
+    }
+    
+    body {
+        background-color: burlywood;
+    }
+    
+}
